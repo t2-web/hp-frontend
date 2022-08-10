@@ -1,0 +1,26 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "editor.tabSize": 2,
+    "editor.formatOnSave": false,
+    "prettier.singleQuote": true,
+    "html.format.wrapLineLength": 150,
+    "editor.defaultFormatter": "octref.vetur",
+    "vetur.format.defaultFormatter.html": "prettier",
+    "vetur.format.defaultFormatter.css": "prettier",
+    "vetur.format.defaultFormatter.postcss": "prettier",
+    "vetur.format.defaultFormatter.scss": "prettier",
+    "vetur.format.defaultFormatter.less": "prettier",
+    "vetur.format.defaultFormatter.stylus": "stylus-supremacy",
+    "vetur.format.defaultFormatter.js": "prettier",
+    "vetur.format.defaultFormatter.ts": "prettier",
+    "files.exclude": {
+      "html": true, // this is a default value
+      "dist": true, // this is a default value
+      "**/.git": true, // this is a default value
+      "**/.DS_Store": true, // this is a default value
+      // alternative version
+      "node_modules": true // this excludes the folder
+      // only from the root of
+      // your workspace
+    },
+  }

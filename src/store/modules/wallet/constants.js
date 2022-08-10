@@ -1,0 +1,3 @@
+export const UPDATE_WALLET = 'UPDATE_WALLET';
+export const RESET_STATE = 'RESET_STATE';
+export const UPDATE_LOADING = 'UPDATE_LOADING';

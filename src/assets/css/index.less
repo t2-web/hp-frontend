@@ -1,0 +1,211 @@
+@import '~ant-design-vue/dist/antd.less';
+@import './dark.less';
+@import './variables.less';
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 12px;
+  background: @body-background;
+  color: @text-color;
+  line-height: 1.5;
+  font-family: @font-family;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#app {
+  max-width: 1920px;
+  overflow: hidden;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+}
+
+#app .ant-layout-header {
+  height: 88px;
+  padding: 12px 10px;
+}
+
+#app-contents {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+#app .app-body {
+  width: 100%;
+  max-width: 1161px;
+  display: flex;
+  margin: auto;
+  padding: 0px 10px;
+  flex-direction: column;
+}
+
+.photo-uploader > .ant-upload {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  color: rgb(255, 255, 255);
+  border-radius: 12px;
+  background-color: rgba(42, 42, 45, 0.5);
+  border: 1px dashed rgb(96, 96, 102);
+}
+
+.ant-upload.ant-upload-select-picture-card > .ant-upload {
+  padding: 0;
+}
+.fade-in {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.3s;
+}
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.error-mess {
+  color: rgb(255, 77, 79) !important;
+  font-size: 12px;
+  padding: 0px 16px;
+  margin-top: 6px;
+}
+.ant-modal {
+  padding-bottom: 0px;
+}
+.header {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 9px 0px 40px;
+}
+.dd-input-wrapper {
+  height: 48px;
+  background: rgb(55, 55, 57);
+  background-color: rgb(42, 42, 45);
+  border-color: transparent;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  display: flex;
+  padding: 0 16px;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: stretch;
+}
+.dd-input {
+  width: 100%;
+  height: 48px;
+  line-height: 48px;
+  border-radius: 0px;
+  border: none;
+  font-size: 14px;
+  outline: none;
+  margin: 0;
+  padding: 0px;
+  outline: 0;
+  box-shadow: none;
+  color: @text-color;
+  background-color: rgb(42, 42, 45);
+}
+.dd-input[disabled] {
+  color: @text-color;
+  background-color: rgb(42, 42, 45);
+}
+.dd-input:focus {
+  outline: 0;
+  box-shadow: none;
+}
+.dd-textarea-wrapper {
+  background: rgb(55, 55, 57);
+  background-color: rgb(42, 42, 45);
+  border-color: transparent;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  display: flex;
+  padding: 0px 0px;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: stretch;
+}
+.dd-textarea {
+  width: 100%;
+  border-radius: 0px;
+  border: none;
+  font-size: 14px;
+  outline: none;
+  margin: 0;
+  padding: 10px 16px;
+  outline: 0;
+  box-shadow: none;
+  color: @text-color;
+  background-color: rgb(42, 42, 45);
+  resize: none;
+}
+.dd-textarea:focus {
+  outline: 0;
+  box-shadow: none;
+}
+.card {
+  margin-bottom: 30px;
+}
+.card-title {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.card-body {
+  display: flex;
+  flex-direction: row;
+}
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto 0px auto;
+}
+.btn-confirm {
+  height: 60px;
+  width: 300px;
+  border-radius: 14px;
+  line-height: 60px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.btn-confirm[disabled] {
+  cursor: not-allowed;
+  background: rgb(55, 55, 57);
+  color: rgb(26, 26, 27);
+  border-color: rgb(55, 55, 57);
+}
+.btn-confirm[disabled]:hover {
+  cursor: not-allowed;
+  background: rgb(55, 55, 57);
+  color: rgb(26, 26, 27);
+  border-color: rgb(55, 55, 57);
+}
+
+// md
+@media only screen and (max-width: 740px) {
+  .card-body {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #app .ant-layout-header {
+    height: 64px;
+    padding: 8px 0px;
+  }
+}
